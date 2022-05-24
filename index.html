@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Nackman - CT Assessment</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .main_container {
+      width: 100vw;
+    }
+
+    .bg01_container {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .nav {
+      position: absolute;
+      color: white;
+      width: 60%;
+      height: 50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 12px;
+      display: flex;
+    }
+
+    .nav_left {
+      width: 10%;
+    }
+
+    .nav_right {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .nav_links {
+      margin-left: 30px;
+      padding: 0px;
+    }
+
+    .nav_links > a {
+      color: white;
+      text-decoration: none;
+      font-style: italic;
+      font-weight: bold;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid white;
+      /* background-color: pink; */
+    }
+
+    .bg01, .bg02 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .sticky_nav {
+      position: absolute;
+      bottom: 0;
+      height: 5vh;
+      width: 100%;
+      background-color: white;
+      padding: 12px;
+    }
+
+    .sticky_nav_center {
+      width: 60%;
+      height: 100%;
+      /* background-color: pink; */
+      margin:auto;
+      display: flex;
+      color: #8e96a7;
+    }
+
+    .stickY_nav_left {
+      width: 10%;
+    }
+
+    .sticky_nav_right {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .sticky_nav_links {
+      margin-left: 30px;
+      padding: 0px;
+    }
+
+    .sticky_nav_links > a {
+      color: #8e96a7;
+      text-decoration: none;
+      font-style: italic;
+      font-weight: bold;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #8e96a7;
+    }
+
+    .bg02_container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .bg02 {
+      position: absolute;
+      object-fit: cover;
+      margin-top: 0;
+    }
+
+    .bg02_heading {
+      position: absolute;
+      top: 7vh;
+      left: 20vw;
+    }
+
+    .bg02_text  {
+      position: absolute;
+    }
+
+    .carousel_container {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 30vh;
+      align-items: center;
+    }
+
+    .carousel_bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      /* bottom: 0; */
+      z-index: 1;
+    }
+
+    .carousel_window {
+      width: 60%;
+      height: 70%;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+      display: inline-block;
+      background-color: blue;
+      padding: 0 15px;
+      /* overflow: hidden; */
+    }
+
+    .carousel_img_container {
+      /* position: absolute; */
+      display: flex;
+      height: 100%;
+      width: 350px;
+      margin-left: 15px;
+      background-color: pink;
+      overflow: hidden;
+    }
+
+    .carousel_img {
+      /* position: absolute; */
+      /* top: 0; */
+      /* bottom: 0; */
+      display: none;
+      /* height: 100%;
+      width: 100%; */
+      /* object-fit: contain; */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main_container">
+    <div class="bg01_container">
+      <div class="nav">
+        <div class="nav_left"><img src ="images/logo.png"/></div>
+        <div class="nav_right">
+          <div class="nav_links"><a href="TODO">01. HISTORY</a></div>
+          <div class="nav_links"><a href="TODO">02. TEAM</a></div>
+        </div>
+      </div>
+      <img class="bg01" src="images/bg01.png"/>
+      <div class="sticky_nav">
+        <div class="sticky_nav_center">
+          <div class="sticky_left"><img src ="images/logo2.png"/></div>
+          <div class="sticky_nav_right">
+            <div class="sticky_nav_links"><a href="TODO">01. HISTORY</a></div>
+            <div class="sticky_nav_links"><a href="TODO">02. TEAM</a></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="bg02_container">
+        <img class="bg02" src="images/bg02.png"/>
+        <img class="bg02_heading" src="images/text01.png"/>
+        <p class="bg02_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congu</p>
+        <div class="carousel_container">
+          <img class="carousel_bg" src="images/carousel_bg.png"/>
+          <div class="carousel_window">
+              <div class="carousel_img_container"><img class="carousel_img" src="images/carousel_img1.png"/></div>
+              <div class="carousel_img_container"><img class="carousel_img" src="images/carousel_img2.png"/></div>
+              <div class="carousel_img_container"><img class="carousel_img" src="images/carousel_img1.png"/></div>
+              <div class="carousel_img_container"><img class="carousel_img" src="images/carousel_img2.png"/></div>
+              <div class="carousel_img_container"><img class="carousel_img" src="images/carousel_img1.png"/></div>
+              <div class="carousel_img_container"><img class="carousel_img" src="images/carousel_img2.png"/></div>
+          </div>
+        </div>
+      </div>
+  </div>
+      <!-- <img class="bg02" src="images/bg03.png"/> -->
+      <!-- <img class="bg02" src="images/bg04.png"/> -->
+</body>
+</html>
+
